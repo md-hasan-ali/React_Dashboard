@@ -1,0 +1,53 @@
+.upcoming-event {
+    background: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.title a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 16px;
+}
+
+.u-title {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.u-title img {
+    margin-right: 10px;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.u-title h4 {
+    font-size: 16px;
+    color: #666666;
+    font-weight: 600;
+}
+
+.u-info li {
+    list-style: none;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.u-border {
+    border-bottom: 1px solid #F9F9F9;
+    padding-bottom: 30px;
+}

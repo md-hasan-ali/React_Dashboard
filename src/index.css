@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Cairo', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #3E4868;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #FFE1E2;
+}
+
+.btn-styleNew {
+  background: transparent !important;
+  color: #000 !important;
+  width: 92px;
+  padding: 6px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #8E8E8E;
+}
+
+
+.btn-styleNew:hover,
+.active {
+  background-color: #2563EB !important;
+  color: #fff !important;
+}
+
+.btn-styleNew.hover {
+  background-color: transparent !important;
+  color: #000 !important;
+  opacity: .5;
+
+}
+
+.btn-styleNew.hover.active {
+  background-color: #2563EB !important;
+  color: #fff !important;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-styleNew.hover:hover {
+  background-color: #2563EB !important;
+  color: #fff !important;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.headerTopAreaFixd {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.mainMenuArea {
+  position: fixed;
+  left: 0;
+  bottom: -20px;
+  height: calc(100vh - 72px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 999999;
+  padding-left: 10px;
+}
+
+.profileLogo a {
+  text-decoration: none;
+}
+
+.profileLogo {
+  position: relative;
+}
+
+.logo a {
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.profileLogo_dopdown {
+  width: 185px;
+  z-index: 99;
+  top: 67px;
+  position: absolute;
+  transition: 1s;
+  border-radius: 5px;
+  background: #fff;
+  right: 8px;
+  padding: 8px 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profileLogo_dopdown a {
+  background: white;
+  font-size: 15px;
+  display: block;
+  padding: 5px 11px;
+  color: #74777B;
+  transition: 1s;
+  width: 100%;
+  text-align: center;
+}
+
+.profileLogo_dopdown a:hover {
+  background-color: #b8b9bb36;
+}
+
+/* Modal CSS Start  */
+.modal-content {
+  padding: 10px 10px 40px 10px;
+}
+
+.offonarea input[type="checkbox"] {
+  width: 51px;
+  height: 23px;
+  background-color: #E4E4E4;
+  -webkit-appearance: none;
+  border-radius: 40px;
+  outline: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  position: relative;
+  transition: .5s;
+}
+
+.offonarea input:checked[type="checkbox"] {
+  background-color: #3498db;
+  transition: .4s;
+}
+
+.offonarea input[type="checkbox"]::before {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 2px;
+  position: absolute;
+  content: "";
+  top: 2px;
+  transition: .4s;
+}
+
+.offonarea input:checked[type="checkbox"]::before {
+  left: 30px;
+}
+
+.searchBtn {
+  position: relative;
+}
+
+.searchBtn button {
+  position: absolute;
+  left: 15px;
+  border: none;
+  top: 0;
+  background: none;
+  font-size: 24px;
+}
+
+.modal-title.h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #1B2445;
+}
+
+.main_modal_search h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: #3E4868;
+}
+
+.searchBtn input {
+  width: 100%;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  padding: 10px 10px 10px 48px;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+  line-height: 22px;
+}
+
+.searchBtn input:focus {
+  outline-width: 0;
+}
+
+/* modal offon area  */
+.onoffarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0 60px 0;
+}
+
+.modal-header {
+  border-bottom: none !important;
+  padding-bottom: 20px;
+}
+
+.single_user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  cursor: pointer;
+  margin: 4px 0;
+}
+
+.single_modalUser {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+}
+
+.single_modalUser img {
+  width: 44px;
+  height: 44px;
+}
+
+.single_user>a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8E8E8E;
+  text-decoration: none;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+.main_singleModeldata {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.content_dataAdded p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.content_dataAdded a {
+  font-size: 12px;
+  line-height: 1;
+  text-decoration: none;
+  color: gray;
+}
+
+/* Modal css End */
+
+
+@media all and (min-width: 1200px) {}
+
+@media all and (min-width: 768px) {}
+
+@media all and (max-width:1200px) {}
+
+@media all and (max-width: 992px) {}
+
+@media all and (max-width: 767px) {}
+
+@media all and (max-width: 567px) {}
